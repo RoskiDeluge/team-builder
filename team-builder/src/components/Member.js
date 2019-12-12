@@ -1,9 +1,9 @@
 import React from "react";
 
-const Members = props => {
+const Members = ({members}) => {
   return (
     <div className="members-list">
-      {props.members.map(member => (
+      {members.map(member => (
         <div key={member.id}>
           <h2>{member.name}</h2>
           <p>{member.role}</p>
